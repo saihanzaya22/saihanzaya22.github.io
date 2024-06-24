@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Happy Birthday TO THE PRETTIEST GIRL</title>
+    <title>Happy Birthday Love</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="banner" id="banner">
-        <h1>Happy Birthday Baby</h1>
+        <h1>Happy Birthday, Love!</h1>
     </div>
     <div class="content" id="content" style="display: none;">
         <div class="message">
-            <p> memories </p>
+            <p>Cute saying things...</p>
             <div class="photos">
+                <img src="photo1.jpg" alt="Photo 1">
                 <img src="photo1.jpg" alt="Photo 1">
                 <img src="photo2.JPG" alt="Photo 2">
                 <img src="photo4.jpg" alt="Photo 4">
@@ -25,9 +27,8 @@
                 <img src="photo9.heic" alt="Photo 9">
             </div>
             <div class="choices">
-                <button onclick="showEnvelope()">Envelope</button>
-                <button onclick="showJar()">Jar</button>
-                <button onclick="showMovie()">Movie Disc</button>
+                <button onclick="showEnvelope()"><i class="fas fa-envelope"></i> Envelope</button>
+                <button onclick="showJar()"><i class="fas fa-jar"></i> Jar</button>
             </div>
         </div>
         <div id="envelope" class="gift" style="display: none;">
@@ -47,7 +48,7 @@ Happy Birthday, love!
 
 Yours always,
 Sayu</p>
-            <button onclick="showJar()">Next: Jar</button>
+            <button onclick="showJar()"><i class="fas fa-jar"></i> Next: Jar</button>
         </div>
         <div id="jar" class="gift" style="display: none;">
             <p>Top 5 Songs that Remind Me of You:</p>
@@ -58,15 +59,6 @@ Sayu</p>
                 <li><a href="https://open.spotify.com/track/0YNtAadZvKBBEFARtfoCV8?si=adZFhiXbQaCJlDpCRURWCA">Song 4</a></li>
                 <li><a href="https://open.spotify.com/track/2LSsSV7V33wM9EKQA2xjGS?si=-cueJ03mRrqlWx3aY8oTVg">Song 5</a></li>
             </ul>
-            <button onclick="showMovie()">Next: Movie Disc</button>
-        </div>
-        <div id="movie" class="gift" style="display: none;">
-            <p>A special video for you:</p>
-            <video controls>
-                <source src="movie.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-            <p>Happy Birthday, Love you the most!</p>
         </div>
     </div>
     <script src="scripts.js"></script>
