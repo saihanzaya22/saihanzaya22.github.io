@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Love</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="initial">
+        <img src="assets/envelope-closed.png" alt="Envelope" id="envelope" class="envelope">
+    </div>
+    <div class="main-content" id="main-content" style="display: none;">
+        <h1>Thank you for the memories</h1>
+        <div class="photos">
+            <img src="photos/photo1.jpg" alt="Photo 1">
+            <img src="photos/photo2.JPG" alt="Photo 2">
+            <img src="photos/photo4.jpg" alt="Photo 4">
+            <img src="photos/photo5.HEIC" alt="Photo 5">
+            <img src="photos/photo6.HEIC" alt="Photo 6">
+            <img src="photos/photo7.heic" alt="Photo 7">
+            <img src="photos/photo8.JPG" alt="Photo 8">
+            <img src="photos/photo9.heic" alt="Photo 9">
+        </div>
+        <div class="choices">
+            <button onclick="showLetter()"><i class="fas fa-envelope"></i> Letter</button>
+            <button onclick="showJar()"><i class="fas fa-jar"></i> Jar</button>
+        </div>
+    </div>
+    <div class="gift-content" id="letter-content" style="display: none;">
+        <div class="paper">
+            <p>Birthday Letter: Dear Pookie,<br><br>
+            Happy Birthday to the most wonderful person in my life! On this special day, I want to take a moment to tell you how much you mean to me and how grateful I am to have you in my life.<br><br>
+            From the very first day we met, you have brought so much joy, love, and happiness into my world. Your smile lights up my darkest days, and your laughter is the sweetest music to my ears. You are my rock, my confidante, and my best friend. I cherish every moment we spend together, and I am constantly amazed by your kindness, strength, and beauty.<br><br>
+            Even though we are miles apart, my heart is always with you. I dream of the day when we can be together and create even more beautiful memories. Until then, I hold onto the thought of you and the love we share, which gives me strength and comfort.<br><br>
+            I hope this birthday is as special and amazing as you are. May it be filled with love, laughter, and everything your heart desires. You deserve nothing but the best, and I promise to do everything in my power to make you happy.<br><br>
+            Thank you for being you and for loving me. I am truly blessed to have you in my life. Here's to celebrating you today and every day.<br><br>
+            Happy Birthday, love!<br><br>
+            Yours always,<br>
+            Sayu</p>
+            <button onclick="showJar()" class="handwriting">To the next gift</button>
+        </div>
+    </div>
+    <div class="gift-content" id="jar-content" style="display: none;">
+        <div class="jar">
+            <p>Top 5 Songs that Remind Me of You:</p>
+            <ul>
+                <li><a href="https://open.spotify.com/track/1OubIZ0ARYCUq5kceYUQiO?si=ctzJ4k7LSCGtHxUu9Y3TUg">Song 1</a></li>
+                <li><a href="https://open.spotify.com/track/6dOtVTDdiauQNBQEDOtlAB?si=kKJgRlgaTaWeSDySe0RQYw">Song 2</a></li>
+                <li><a href="https://open.spotify.com/track/2rYXXYRrP3qOOPkUsUTsal?si=yEZNlAfBTWaWO5TWsDJzOQ">Song 3</a></li>
+                <li><a href="https://open.spotify.com/track/0YNtAadZvKBBEFARtfoCV8?si=adZFhiXbQaCJlDpCRURWCA">Song 4</a></li>
+                <li><a href="https://open.spotify.com/track/2LSsSV7V33wM9EKQA2xjGS?si=-cueJ03mRrqlWx3aY8oTVg">Song 5</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
