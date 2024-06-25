@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Baby!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="password-protection" class="login-section">
+        <h1>Enter the Password</h1>
+        <p>The password is your name.</p>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="content" style="display:none;">
+        <header>
+            <h1>Happy Birthday, Baby!</h1>
+            <p>Welcome to your special birthday website.</p>
+        </header>
+
+        <section id="countdown">
+            <h2>Countdown to Your Special Day</h2>
+            <div id="timer"></div>
+        </section>
+
+        <section id="gallery">
+            <h2>from little memories we shared</h2>
+            <div class="photo-grid">
+                <img src="photos/photo1.jpg" alt="Photo 1">
+                <img src="photos/photo2.JPG" alt="Photo 2">
+                <img src="photos/photo4.jpg" alt="Photo 4">
+                <img src="photos/photo5.HEIC" alt="Photo 5">
+                <img src="photos/photo6.HEIC" alt="Photo 6">
+                <img src="photos/photo7.heic" alt="Photo 7">
+                <img src="photos/photo8.JPG" alt="Photo 8">
+                <img src="photos/photo9.heic" alt="Photo 9">
+            </div>
+        </section>
+
+        <section id="special-button">
+            <a href="letter.html" class="heart-button">Click on me</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Happy Birthday, Love!</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
