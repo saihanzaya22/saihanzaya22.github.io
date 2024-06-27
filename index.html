@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Baby!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="password-protection" class="login-section">
+        <h1>Enter the Password</h1>
+        <p>The password is your name.</p>
+        <input type="password" id="password" placeholder="Enter password">
+        <button onclick="checkPassword()">Submit</button>
+        <p id="error-message"></p>
+    </div>
+
+    <div id="content" style="display:none;">
+        <header>
+            <h1>Happy Birthday, Baby!</h1>
+            <p>Welcome to your special birthday website.</p>
+        </header>
+
+        <section id="countdown">
+            <h2>Countdown to Your Special Day</h2>
+            <div id="timer"></div>
+        </section>
+
+        <section id="gallery">
+            <h2>gallery</h2>
+            <div class="photo-grid">
+                <img src="photos/IMG_3908.JPG" alt="Photo 1">
+                <img src="photos/IMG_3904.JPG" alt="Photo 2">
+                <img src="photos/IMG_3903.JPG" alt="Photo 3">
+                <img src="photos/IMG_3905.JPG" alt="Photo 4">
+                <img src="photos/IMG_4043.JPG" alt="Photo 5">
+                <img src="photos/IMG_4046.JPG" alt="Photo 6">
+                <img src="photos/IMG_4047.JPG" alt="Photo 7">
+                <img src="photos/IMG_3906.JPG" alt="Photo 8">
+                <img src="photos/IMG_3902.JPG" alt="Photo 9">
+                <img src="photos/IMG_4041.JPG" alt="Photo 10">
+                <img src="photos/IMG_4044.JPG" alt="Photo 11">
+                <img src="photos/85F6FFA5-05D4-47A3-87E1-8C9C3713D280.JPG" alt="Photo 12">
+                <img src="photos/A39462E5-CEFF-42C5-8E01-4A75814C0154.JPG" alt="Photo 13">
+                <img src="photos/2760B0BB-69D5-49B3-AFA8-588B42F52385.JPG" alt="Photo 14">
+                <img src="photos/8AACDFB6-21A0-44C0-B4F6-8DC3A7C4F47D.JPG" alt="Photo 15">
+            </div>
+        </section>
+
+        <section id="special-button">
+            <a href="letter.html" class="heart-button">Click on me</a>
+        </section>
+
+        <footer>
+            <p>&copy; 2024 Happy Birthday, Love!</p>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
